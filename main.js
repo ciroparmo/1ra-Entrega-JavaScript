@@ -81,6 +81,7 @@ do {
     }
 
   else if(elegirPrincipal == "2") {
+    do {
     elegirSecundario = prompt("Bienvenido al bar!\nCuantos años tienes?\n\nNota: Debes ser mayor de 18 para pasar.\n\nPara volver atras escribe ESC");
 
     elegirSecundario = elegirSecundario.toUpperCase()
@@ -156,13 +157,13 @@ do {
     }
 
     else if(elegirSecundario == "ESC") {
-      alert("Esperamos que vuelvas pronto!")
       break
     }
 
     else {
       alert("Opcion no valida")
       }
+    }while(elegirSecundario != "ESC") 
   }
 
   else if(elegirPrincipal == "ESC") {
